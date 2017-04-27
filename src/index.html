@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+<div class="container-fluid">
+    <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+        <div class="container-fluid">
+
+
+                <div class="navbar-collapse move-me collapse lan">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a>注册</a></li>
+                        <li><a>登录</a></li>
+                        <li><a>通知</a></li>
+                        <li><a>设置</a></li>
+                    </ul>
+                </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <nav class="navbar navbar-default router">
+            <!-- Brand and toggle get grouped for better mobile display -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse col-xs-6 col-md-6" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav uls">
+                    <li><a ui-sref-active="on" ui-sref="index">首页  </a></li>
+                    <li><a ui-sref-active="on" ui-sref="community">社区团体活动服务  </a></li>
+                    <li><a ui-sref-active="on" ui-sref="party">党组织活动服务  </a></li>
+                    <li><a ui-sref-active="on" ui-sref="resident">居民自治活动服务  </a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+            <!-- /.container-fluid -->
+        </nav>
+    </div>
+</div>
+<ui-view></ui-view>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="../dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-ui-router.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script>
+</script>
+</body>
+</html>
